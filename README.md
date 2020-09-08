@@ -2,6 +2,12 @@
 
 AWS Cognito SRP Utility
 
+This is a ruby implementation of [the AWS Cognito flow helpers](https://github.com/aws-amplify/amplify-js/blob/main/packages/amazon-cognito-identity-js/src/AuthenticationHelper.js)
+using some ideas from [the SIRP gem](https://github.com/grempe/sirp)
+
+By design the `AwsSRP::Flow` only processes params but doesn't trigger any responses.
+Responses should be handled on the client side.
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -20,7 +26,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    flow = AwsSRP::Flow.new
+    init_params = flow.init_auth
+
+    # Do the init AWS Congnito request by sending `init_params`
+    # Parse the JSON response and pass it to the `AwsSRP::Flow#verify_password`
+
+    challange_request_params = flow.verify_password(challange_response_body)
+
+    # Send the `challange_request_params` and parse the response.
+    # The session token should be there
+
+## TODO
+
+- Test coverage for `AwsSRP::SRP` and `AwsSRP::Flow` classes
+- Handle more AWS Cognito features(2FA, etc)
 
 ## Development
 
