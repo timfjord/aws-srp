@@ -1,4 +1,4 @@
-# aws-srp
+# aws-srp [![Build Status](https://travis-ci.org/timsly/aws-srp.svg?branch=master)](https://travis-ci.org/timsly/aws-srp)
 
 AWS Cognito SRP Utility
 
