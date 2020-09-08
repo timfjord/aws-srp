@@ -26,16 +26,18 @@ Or install it yourself as:
 
 ## Usage
 
-    flow = AwsSRP::Flow.new
-    init_params = flow.init_auth
+```ruby
+flow = AwsSRP::Flow.new
+init_params = flow.init_auth
 
-    # Do the init AWS Congnito request by sending `init_params`
-    # Parse the JSON response and pass it to the `AwsSRP::Flow#verify_password`
+# Do the init AWS Congnito request by sending `init_params`
+# Parse the JSON response and pass it to the `AwsSRP::Flow#verify_password`
 
-    challange_request_params = flow.verify_password(challange_response_body)
+challange_request_params = flow.verify_password(challange_response_body)
 
-    # Send the `challange_request_params` and parse the response.
-    # The session token should be there
+# Send the `challange_request_params` and parse the response.
+# The session token should be there
+```
 
 ## TODO
 
