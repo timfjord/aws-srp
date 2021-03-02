@@ -1,4 +1,4 @@
-# aws-srp [![Build Status](https://github.com/timfjord/aws-srp/actions/workflows/test/badge.svg)
+# aws-srp [![Build Status](https://github.com/timfjord/aws-srp/actions/workflows/test.yml/badge.svg)
 
 AWS Cognito SRP Utility
 
