@@ -2,7 +2,7 @@
 
 module AwsSRP
   class Flow
-    # Password Verifier Challange response wrapper
+    # Password Verifier Challenge response wrapper
     class PasswordVerifierResponse
       attr_reader :response
 

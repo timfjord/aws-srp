@@ -1,4 +1,4 @@
-# aws-srp [![Build Status](https://github.com/timfjord/aws-srp/actions/workflows/test.yml/badge.svg)
+# aws-srp ![Build Status](https://github.com/timfjord/aws-srp/actions/workflows/test.yml/badge.svg)
 
 AWS Cognito SRP Utility
 
@@ -33,9 +33,9 @@ init_params = flow.init_auth
 # Do the init AWS Congnito request by sending `init_params`
 # Parse the JSON response and pass it to the `AwsSRP::Flow#verify_password`
 
-challange_request_params = flow.verify_password(challange_response_body)
+challenge_request_params = flow.verify_password(challenge_response_body)
 
-# Send the `challange_request_params` and parse the response.
+# Send the `challenge_request_params` and parse the response.
 # The session token should be there
 ```
 
